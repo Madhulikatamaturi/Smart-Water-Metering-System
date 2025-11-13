@@ -38,10 +38,8 @@ Below is the overall system flow:
 4. **API Gateway** retrieves data for web and mobile clients.  
 5. **Amazon QuickSight** visualizes real-time and historical usage.
 
-📊 *Architecture Diagram:*  
-*(Add your `architecture_diagram.png` here once uploaded)*
-
----
+### 📊 Architecture Diagram
+![Architecture Diagram](Images/architecture_diagram.png)
 
 ## 🧾 Sample Data
 ```json
@@ -50,8 +48,10 @@ Below is the overall system flow:
   "timestamp": "2025-06-01 11:42:12",
   "flow_rate_lpm": 2.15
 }
+```
 
 ---
+
 
 ## 📊 Dashboard (Amazon QuickSight)
 
@@ -63,9 +63,7 @@ It includes:
 - Trend analysis for anomaly detection  
 
 ### 📈 Dashboard Preview
-![Dashboard Preview](images/quicksight_dashboard.png)
-
----
+![Dashboard Preview](Images/quicksight_dashboard.png)
 
 ---
 
@@ -73,9 +71,7 @@ It includes:
 
 Below is a sample MQTT message received from the water meter device on the topic `water_meter/data`.
 
-![MQTT Output](images/mqtt_output.png)
-
----
+![MQTT Output](Images/mqtt_output.png)
 
 ---
 
@@ -88,9 +84,7 @@ Each entry contains:
 - `flow_rate_lpm`  
 
 ### 📄 DynamoDB Table Screenshot
-![DynamoDB Table](images/dynamodb_table.png)
-
----
+![DynamoDB Table](Images/dynamodb_table.png)
 
 ---
 
@@ -106,6 +100,6 @@ This endpoint returns:
 - `flow_rate_lpm`
 
 ### 📄 API Response Screenshot
-![API Response](images/api_gateway_output.png)
+![API Response](Images/api_gateway_output.png)
 
 ---
